@@ -1,0 +1,30 @@
+
+.additionally {
+    margin: 0 66px 82px;
+
+}
+.additionally__list {
+    display: flex;
+
+}
+.additionally__item {
+    display: flex;
+    align-items: center;
+    margin-right: 82px;
+    max-width: 90px;
+    &:last-child{
+        margin-right: 0;
+    }
+}
+.additionally__img {
+    display: block;
+    margin-right:14px;
+    }
+
+.additionally__title {
+    color: $white;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+}
+

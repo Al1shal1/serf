@@ -1,0 +1,161 @@
+
+.order__form {
+    background: url(../img/cta.png) no-repeat;
+    background-size: cover;
+        height: 100vh;
+        min-height: 650px;
+    }
+    
+    .order__title {
+    color: $white;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 61px;
+    }
+    .form {
+        display: flex;
+        margin: 0 80px;
+    }
+    .form__col {
+        flex: 1;
+        margin-right: 27px;
+        margin-bottom: 36px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    .form__row {
+        display: flex;
+        margin-bottom: 36px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    
+.form__row--right{
+    margin-bottom: 56px;
+}
+
+.form__block {
+    flex: 1;
+    margin-right: 17px;
+    color: $white;
+    &:last-child{
+        margin-right: 0;
+    }
+}
+.form__caption {
+color: $white;
+font-size: 18px;
+font-weight: 400;
+line-height: 22px;
+}
+
+.form__input {
+    width: 100%;
+    border: none;
+    padding: 18px 68px 20px 12px;
+    border: 3px solid transparent;
+    border-radius: 4px;
+    &:focus{
+        border-color:$yel;
+        outline: none;
+        
+    }
+}
+.form__input--textarea {
+    height: 183px;
+    resize: none;
+}
+
+.form__controls {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 47px;
+}
+.form__radio {
+    display: flex;
+    cursor: pointer;
+    user-select: none;
+    margin-right: 9px;
+    align-items: center;
+    margin-bottom: 21px;
+    &:last-child{
+        margin-right: 0;
+    }
+    &--checkbox{
+        .radio__visible{
+            border-radius: 4px;
+            &::before{
+                background: url(../img/check.png) center center no-repeat;
+                
+            }
+        }
+    }
+}
+
+.radio__visible {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    border-radius: 50%;
+    background: $white;
+    margin-right: 10px;
+    &:last-child{
+        margin-right: 0;
+    }
+    &::before {
+        content: "";
+        width: 13px;
+        height: 13px;
+        background: $yel;
+        border-radius: 50%;
+        position: absolute;
+        display: none;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    
+}
+.radio__title {
+color: $white;
+font-size: 18px;
+font-weight: 400;
+line-height: 22px;
+}
+.radio__elem {
+    display: none;
+    &:checked ~ .radio__visible {
+        &::before{
+            display: block;
+        }
+    }
+}
+.form__button {
+    display: flex;
+}
+.btn__form{
+    border: none;
+    cursor: pointer;
+    margin-right: 22px;
+}
+
+.btn__form--transp{
+    background: transparent;
+    border: none;
+    color: $white;
+font-size: 18px;
+font-weight: 400;
+line-height: 22px;
+text-transform: none;
+padding: 0;
+cursor: pointer;
+&:hover{
+    color: $yelhov;
+    background: transparent;
+}
+}

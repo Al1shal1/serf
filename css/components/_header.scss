@@ -1,0 +1,60 @@
+.header {
+    margin-top:37px;
+    display: flex;
+    align-items: center;
+}
+
+.header__col {
+    display: flex;
+    margin-left: 80px;
+    align-items: center;
+}
+.menu__list {
+    display: flex;
+    align-items: center;
+}
+.menu__item {
+margin-right: 22px;
+    &:last-child{
+    margin-right: 0;
+}
+}
+
+.menu__title {
+    display: inline-block;
+    max-height: 22px;
+    color: $white;
+font-size: 18px;
+font-weight: 700;
+line-height: 20px;
+text-align: center;
+white-space: nowrap;
+}
+.header__col-right {
+    display: flex;
+    margin:0 80px 0 65px ;
+    min-width: 160px;
+}
+.contacts {
+    display: flex;
+    align-items: center;
+}
+.contacts__phone{
+    display: flex;
+    align-items: center;
+    
+}
+
+.contacts__phone__icon{
+    margin-right: 6px;
+    width: 12.83px;
+height: 13.78px;
+
+}
+.contacts__phone__text {
+    color: $white;
+font-size: 22px;
+font-weight: 700;
+line-height: 18px;
+white-space: nowrap;
+}
