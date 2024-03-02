@@ -6,7 +6,6 @@
 
 .header__col {
     display: flex;
-    margin-left: 80px;
     align-items: center;
 }
 .menu__list {
@@ -30,10 +29,9 @@ line-height: 20px;
 text-align: center;
 white-space: nowrap;
 }
-.header__col-right {
+.header__col--right {
     display: flex;
-    margin:0 80px 0 65px ;
-    min-width: 160px;
+    margin:0 0 0 65px ;
 }
 .contacts {
     display: flex;
@@ -45,13 +43,13 @@ white-space: nowrap;
     
 }
 
-.contacts__phone__icon{
+.contacts__phone-icon{
     margin-right: 6px;
     width: 12.83px;
 height: 13.78px;
 
 }
-.contacts__phone__text {
+.contacts__phone-text {
     color: $white;
 font-size: 22px;
 font-weight: 700;

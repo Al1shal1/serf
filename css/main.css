@@ -403,7 +403,6 @@ address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 80px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -436,12 +435,11 @@ address {
   white-space: nowrap;
 }
 
-.header__col-right {
+.header__col--right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 80px 0 65px;
-  min-width: 160px;
+  margin: 0 0 0 65px;
 }
 
 .contacts {
@@ -462,13 +460,13 @@ address {
           align-items: center;
 }
 
-.contacts__phone__icon {
+.contacts__phone-icon {
   margin-right: 6px;
   width: 12.83px;
   height: 13.78px;
 }
 
-.contacts__phone__text {
+.contacts__phone-text {
   color: #fff;
   font-size: 22px;
   font-weight: 700;
@@ -587,6 +585,7 @@ address {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 49px;
 }
 
 .why__title {
@@ -600,7 +599,6 @@ address {
   line-height: 22px;
   text-align: center;
   width: 500px;
-  margin-bottom: 49px;
 }
 
 .why__list {
@@ -642,7 +640,7 @@ address {
           transform: translateX(50%);
 }
 
-.why__img__box {
+.why__img-box {
   background: url(../img/circle.png) no-repeat;
   width: 128px;
   height: 128px;
@@ -674,7 +672,7 @@ address {
           flex-direction: column;
 }
 
-.why__content__title {
+.why__content-title {
   color: #292929;
   font-size: 27px;
   font-weight: 700;
@@ -683,7 +681,7 @@ address {
   margin-bottom: 20px;
 }
 
-.why__content__about {
+.why__content-about {
   color: #666666;
   font-size: 18px;
   font-weight: 300;
@@ -723,7 +721,7 @@ address {
   padding-top: 28px;
 }
 
-.reviews__content__title {
+.reviews__content-title {
   color: #292929;
   font-size: 27px;
   font-weight: 700;
@@ -731,7 +729,7 @@ address {
   margin-bottom: 14px;
 }
 
-.reviews__content__about {
+.reviews__content-about {
   color: #666666;
   font-size: 18px;
   font-weight: 400;
@@ -739,7 +737,7 @@ address {
   margin-bottom: 25px;
 }
 
-.reviews__content__writer {
+.reviews__content-writer {
   color: #292929;
   font-size: 18px;
   font-weight: 500;
@@ -750,7 +748,7 @@ address {
   margin-top: 15px;
 }
 
-.reviews__photo__list {
+.reviews__photo-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -762,13 +760,23 @@ address {
           justify-content: center;
 }
 
-.reviews__photo__item {
+.reviews__photo-item {
   margin-right: 6px;
+  border: 6px solid transparent;
+  border-radius: 50%;
+}
+.reviews__photo-item--active:hover {
+  border-color: #FEDB3F;
 }
 
-.reviews__photo__img--active:hover {
-  border: 5.78px solid #FEDB3F;
-  border-radius: 103.76px;
+.reviews__photo-link {
+  display: block;
+  height: 74px;
+}
+
+.reviews__photo-img {
+  width: 74px;
+  height: 74px;
 }
 
 .order__form {
@@ -800,7 +808,6 @@ address {
       -ms-flex: 1;
           flex: 1;
   margin-right: 27px;
-  margin-bottom: 36px;
 }
 .form__col:last-child {
   margin-right: 0;
@@ -841,7 +848,7 @@ address {
 .form__input {
   width: 100%;
   border: none;
-  padding: 18px 68px 20px 12px;
+  padding: 18px 20px 20px 12px;
   border: 3px solid transparent;
   border-radius: 4px;
 }
@@ -964,6 +971,9 @@ address {
 
 .fixed-menu__item {
   margin-bottom: 7px;
+}
+.fixed-menu__item:last-child {
+  margin-bottom: 0;
 }
 .fixed-menu__item--active .fixed-menu__link {
   border-color: #fff;

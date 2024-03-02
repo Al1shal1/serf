@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 49px;
 }
 
 .why__title {
@@ -15,7 +16,6 @@
     line-height: 22px; 
     text-align: center;
     width: 500px;
-    margin-bottom: 49px;
     }
     .why__list {
         display: flex;
@@ -43,7 +43,7 @@
             }
     }
     
-    .why__img__box{
+    .why__img-box{
         background: url(../img/circle.png)no-repeat;
         width: 128px;
         height: 128px;
@@ -65,7 +65,7 @@
         display: flex;
         flex-direction: column;
     }
-    .why__content__title {
+    .why__content-title {
     color: $header;
     font-size: 27px;
     font-weight: 700;
@@ -73,7 +73,7 @@
     text-align: center;
     margin-bottom: 20px;
     }
-    .why__content__about {
+    .why__content-about {
     color:$subtitle;
     font-size: 18px;
     font-weight: 300;
