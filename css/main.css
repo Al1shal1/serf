@@ -802,7 +802,6 @@ address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 80px;
 }
 
 .form__col {
