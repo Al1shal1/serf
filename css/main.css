@@ -485,7 +485,6 @@ address {
 }
 
 .preview {
-  margin-left: 79px;
   max-width: 550px;
 }
 
@@ -524,7 +523,7 @@ address {
 }
 
 .additionally {
-  margin: 0 66px 82px;
+  margin: 0 0 82px;
 }
 
 .additionally__list {
@@ -765,7 +764,10 @@ address {
   border: 6px solid transparent;
   border-radius: 50%;
 }
-.reviews__photo-item--active:hover {
+.reviews__photo-item--active {
+  border-color: #FEDB3F;
+}
+.reviews__photo-item:hover {
   border-color: #FEDB3F;
 }
 

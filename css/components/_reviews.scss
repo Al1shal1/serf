@@ -53,11 +53,13 @@ padding-top: 28px;
     border: 6px solid transparent;
     border-radius: 50%;
         &--active{
+            border-color: $yel;
+        }
     &:hover{
         border-color: $yel;
     }
 }
-}
+
 
 .reviews__photo-link {
     display: block;
