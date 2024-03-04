@@ -27,15 +27,15 @@
     }
     .form__row {
         display: flex;
-        margin-bottom: 36px;
+        margin-bottom: 14px;
         &:last-child{
             margin-bottom: 0;
         }
+        &--right{
+            margin-bottom: 36px;
+        }
     }
     
-.form__row--right{
-    margin-bottom: 56px;
-}
 
 .form__block {
     flex: 1;
@@ -55,7 +55,7 @@ line-height: 22px;
 .form__input {
     width: 100%;
     border: none;
-    padding: 18px 20px 20px 12px;
+    padding: 18px 20px 16px 12px;
     border: 3px solid transparent;
     border-radius: 4px;
     &:focus{
@@ -65,26 +65,27 @@ line-height: 22px;
     }
 }
 .form__input--textarea {
-    height: 183px;
+    height: 153px;
     resize: none;
 }
 
 .form__controls {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 47px;
+    margin: 0 0 47px 6px;
 }
 .form__radio {
     display: flex;
     cursor: pointer;
     user-select: none;
-    margin-right: 9px;
+    margin-right: 18px;
     align-items: center;
-    margin-bottom: 21px;
+    margin-bottom: 16px;
     &:last-child{
         margin-right: 0;
     }
     &--checkbox{
+        margin-bottom: 0;
         .radio__visible{
             border-radius: 4px;
             &::before{
@@ -102,9 +103,6 @@ line-height: 22px;
     border-radius: 50%;
     background: $white;
     margin-right: 10px;
-    &:last-child{
-        margin-right: 0;
-    }
     &::before {
         content: "";
         width: 13px;

@@ -322,7 +322,7 @@ body, html {
 }
 
 body {
-  font-family: "Alegreya-sans", sans-serif;
+  font-family: "Alegreya sans", sans-serif;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -485,7 +485,7 @@ address {
 }
 
 .preview {
-  max-width: 550px;
+  max-width: 495px;
 }
 
 .preview__title {
@@ -610,9 +610,6 @@ address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -817,14 +814,13 @@ address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 36px;
+  margin-bottom: 14px;
 }
 .form__row:last-child {
   margin-bottom: 0;
 }
-
 .form__row--right {
-  margin-bottom: 56px;
+  margin-bottom: 36px;
 }
 
 .form__block {
@@ -848,7 +844,7 @@ address {
 .form__input {
   width: 100%;
   border: none;
-  padding: 18px 20px 20px 12px;
+  padding: 18px 20px 16px 12px;
   border: 3px solid transparent;
   border-radius: 4px;
 }
@@ -858,7 +854,7 @@ address {
 }
 
 .form__input--textarea {
-  height: 183px;
+  height: 153px;
   resize: none;
 }
 
@@ -868,7 +864,7 @@ address {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 47px;
+  margin: 0 0 47px 6px;
 }
 
 .form__radio {
@@ -880,14 +876,17 @@ address {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  margin-right: 9px;
+  margin-right: 18px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 21px;
+  margin-bottom: 16px;
 }
 .form__radio:last-child {
   margin-right: 0;
+}
+.form__radio--checkbox {
+  margin-bottom: 0;
 }
 .form__radio--checkbox .radio__visible {
   border-radius: 4px;
@@ -903,9 +902,6 @@ address {
   border-radius: 50%;
   background: #fff;
   margin-right: 10px;
-}
-.radio__visible:last-child {
-  margin-right: 0;
 }
 .radio__visible::before {
   content: "";
