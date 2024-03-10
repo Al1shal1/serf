@@ -21,7 +21,8 @@ margin-bottom: rem(9px);
     font-weight: 400;
     line-height: rem(22px); 
     text-align: center;
-    width: rem(500px);
+    max-width: rem(500px);
+    white-space: normal;
 }
 
     .why__list {

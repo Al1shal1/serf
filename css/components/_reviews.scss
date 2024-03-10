@@ -7,14 +7,17 @@
     @include phones {
 font-size: rem(40px);
 line-height: rem(36px);
-margin-bottom: rem(82px);
+margin-bottom: rem(26px);
     }
 }
 .reviews__display {
     background-color: rgb(248, 250, 249);
     padding: rem(42px) rem(142px) rem(42px) rem(42px);
     @include tablets{
-        padding: 0;
+        padding: rem(56px) rem(20px) rem(46px);
+    }
+    @include phones {
+        padding: rem(56px) rem(30px) rem(30px);
     }
 }
 .reviews__inner {

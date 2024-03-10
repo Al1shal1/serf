@@ -4,6 +4,12 @@
 
 html{
     font-size: $BaseFS;
+    @include tablets{
+        font-size: $BaseFS -1px;
+    }
+    @include phones{
+        font-size: $BaseFS -2px;
+    }
 }
 
 body,html {
