@@ -16,7 +16,10 @@
                 <header class="header">
                     <div class="header__col">
                         <a href="#" class="logo">
-                            <img src="./img/logo.png" alt="logo" class="logo__img">
+                            <svg class="header__phone-icon" >
+                                <use xlink:href="./sprite.svg#logo" ></use>
+                            </svg>
+                            
                         </a>
                         <nav class="menu">
                             <ul class="menu__list">
@@ -46,12 +49,19 @@
                         <div class="header__col header__col--right">
                             <address class="contacts">
                                 <a href="tel:+78009039090" class="contacts__phone">
-                                    <img src="./img/phone.png" alt="call" class="contacts__phone-icon">
+                                <svg class="contacts__phone-icon">
+                                    <use xlink:href="./sprite.svg#phone"></use>
+                                </svg>
                                     <span class="contacts__phone-text">8 800 903 90 90</span>
                                 </a>
                             </address>
                         </div>
                     </div>
+                    <a href="#" class="hamburger">
+                        <span class="hamburger__plank"></span>
+                        <span class="hamburger__plank"></span>
+                        <span class="hamburger__plank"></span>
+                    </a>
                 </header>
                 <div class="preview">
                     <h1 class="preview__title">Профессиональные доски для серфинга</h1>
@@ -61,15 +71,27 @@
                 <div class="additionally">
                     <ul class="additionally__list">
                         <li class="additionally__item">
-                            <img src="./img/dis.png" alt="rocket" class="additionally__img">
+                            <div class="additionally__img-box">
+                                <svg class="additionally__img">
+                                    <use xlink:href="./sprite.svg#dis"></use>
+                                </svg>
+                            </div>
                             <div class="additionally__title">Уникальный дизайн</div>
                         </li>
                         <li class="additionally__item">
-                            <img src="./img/material.png" alt="machine" class="additionally__img">
+                            <div class="additionally__img-box">
+                                <svg class="additionally__img">
+                                    <use xlink:href="./sprite.svg#material"></use>
+                                </svg>
+                            </div>
                             <div class="additionally__title">Прочные материалы</div>
                         </li>
                         <li class="additionally__item">
-                            <img src="./img/speed.png" alt="car" class="additionally__img">
+                            <div class="additionally__img-box">
+                                <svg class="additionally__img" >
+                                    <use xlink:href="./sprite.svg#speed"   ></use>
+                                </svg>
+                            </div>
                             <div class="additionally__title">Быстрая доставка</div>
                         </li>
                     </ul>
@@ -87,7 +109,9 @@
                     <ul class="why__list">
                         <li class="why__item">
                             <div class="why__img-box">
-                                <img src="./img/perfect.png" alt="fit" class="why__img">
+                                <svg class="why__img">
+                                    <use xlink:href="./sprite.svg#perfect"></use>
+                                  </svg>
                             </div>
                             <div class="why__content">
                                 <h5 class="why__content-title">Perfect Fit</h5>
@@ -101,7 +125,9 @@
                         </li>
                         <li class="why__item">
                             <div class="why__img-box">
-                                <img src="./img/strong.png" alt="materials" class="why__img">
+                                <svg class="why__img">
+                                    <use xlink:href="./sprite.svg#strong"></use>
+                                  </svg>
                             </div>
                             <div class="why__content">
                                 <h5 class="why__content-title">Strong</h5>
@@ -115,7 +141,9 @@
                         </li>
                         <li class="why__item">
                             <div class="why__img-box">
-                                <img src="./img/uniq.png" alt="board" class="why__img">
+                                <svg class="why__img">
+                                    <use xlink:href="./sprite.svg#uniq"></use>
+                                  </svg>
                             </div>
                             <div class="why__content">
                                 <h5 class="why__content-title">Unique</h5>
@@ -251,6 +279,41 @@
                 </div>
             </section>
         </main>
+        <section class="section map-section">
+            <div id="map"></div>
+        <footer class="footer">
+            <div class="container footer__container">
+                <address class="contacts footer__contacts">
+                    <div class="contacts__place">
+                        Москва, ул.Новый Арбат, д.31/12
+                    </div>
+                    <a href="tel:+78009039090" class="contacts__phone">
+                        <svg class="contacts__phone-icon">
+                            <use xlink:href="./sprite.svg#phone2"></use>
+                        </svg>
+                        
+                        <span class="contacts__phone-text footer__phone-text">8 800 903 90 90</span>
+                    </a>
+                </address>
+                <div class="socials">
+                    <ul class="social__list">
+                        <li class="social__item">
+                            <a href="" class="social__vk"></a>
+                        </li>
+                        <li class="social__item">
+                            <a href="" class="social__fb"></a>
+                        </li>
+                        <li class="social__item">
+                            <a href="" class="social__inst"></a>
+                        </li>
+                        <li class="social__item">
+                            <a href="" class="social__tw"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </section>
         <nav class="fixed-menu">
             <ul class="fixed-menu__list">
                 <li class="fixed-menu__item fixed-menu__item--active">

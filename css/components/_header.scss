@@ -1,41 +1,80 @@
 .header {
-    margin-top:37px;
+    margin-top:rem(37px);
     display: flex;
     align-items: center;
+    @include tablets{
+        background: rgb(25, 104, 177);
+        width: 100%;
+        height: rem(91px);
+        margin-top: 0;
+        position: absolute;
+        left: 0;
+        top: 0;
+        justify-content: space-between;
+    }
+    @include phones{
+        padding: 0 rem(10px);
+    }
 }
 
 .header__col {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    @include tablets{
+        position: relative;
+    }
 }
+
+.header__phone-icon{
+    fill: $white;
+    width: 55px;
+    height: 40px;
+}
+
+.menu {
+    @include tablets{
+        display: none;
+    }
+}
+
 .menu__list {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: rem(10px);
 }
 .menu__item {
-margin-right: 22px;
+margin-right: rem(22px);
+margin-bottom: rem(10px);
     &:last-child{
     margin-right: 0;
+    }
+
 }
-}
+
 
 .menu__title {
     display: inline-block;
-    max-height: 22px;
+    max-height: rem(22px);
     color: $white;
-font-size: 18px;
+font-size: rem(18px);
 font-weight: 700;
-line-height: 20px;
+line-height: rem(20px);
 text-align: center;
 white-space: nowrap;
 }
 .header__col--right {
     display: flex;
-    margin:0 0 0 46px ;
+    margin:0 0 0 rem(46px);
+    @include tablets{
+        display: none;
+    }
 }
 .contacts {
     display: flex;
     align-items: center;
+    padding-top: rem(10px);
 }
 .contacts__phone{
     display: flex;
@@ -44,15 +83,15 @@ white-space: nowrap;
 }
 
 .contacts__phone-icon{
-    margin-right: 6px;
-    width: 12.83px;
-height: 13.78px;
+    margin-right: rem(6px);
+    width: rem(13px);
+height: rem(14px);
 
 }
 .contacts__phone-text {
     color: $white;
-font-size: 22px;
+font-size: rem(22px);
 font-weight: 700;
-line-height: 18px;
+line-height: rem(18px);
 white-space: nowrap;
 }

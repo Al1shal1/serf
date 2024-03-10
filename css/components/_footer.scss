@@ -1,0 +1,79 @@
+.footer {
+    background: $white;
+    height: rem(87px);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    @include tablets{
+        height: rem(107px);
+    }
+    @include phones {
+        height: rem(151px);
+    }
+}
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include phones{
+        flex-direction: column;
+        align-items: center;
+
+    }
+}
+.footer__contacts {
+    display: flex;
+    flex-direction: column;
+    padding: rem(18px) 0;
+    align-items: flex-start;
+    @include phones{
+        align-items: center;
+        padding: rem(20px) 0 rem(19px);
+    }
+}
+.contacts__place {
+    color: $header;
+font-size: rem(21px);
+font-weight: 400;
+line-height: rem(24px);
+display: flex;
+margin-bottom: rem(6px);
+@include phones{
+margin-bottom: rem(12px);
+}
+}
+.footer__phone-text{
+    color: $header;
+font-size: rem(21px);
+font-weight: 400;
+line-height: rem(21px);
+}
+
+.socials {
+    display: flex;
+    padding: rem(38px) 0;
+    @include phones {
+        padding: 0;
+    }
+}
+.social__list {
+    display: flex;
+}
+.social__item {
+    margin-right: rem(14px);
+    &:last-child{
+        margin-right: 0;
+    }
+    
+    @each $social in (vk,fb,inst,tw) {
+        .social__#{$social} {
+            display: block;
+            background: url('../img/svg/#{$social}.svg') no-repeat;
+            width: rem(20px);
+    height: rem(20px);
+        }
+    }
+    
+}
+

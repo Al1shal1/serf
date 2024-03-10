@@ -1,46 +1,77 @@
 
 .reviews__title {
-    margin-bottom: 32px;
+    margin-bottom: rem(32px);
+    @include tablets{
+        margin-bottom: rem(89px);
+    }
+    @include phones {
+font-size: rem(40px);
+line-height: rem(36px);
+margin-bottom: rem(82px);
+    }
 }
 .reviews__display {
     background-color: rgb(248, 250, 249);
-    padding: 42px 142px 42px 42px;
+    padding: rem(42px) rem(142px) rem(42px) rem(42px);
+    @include tablets{
+        padding: 0;
+    }
 }
 .reviews__inner {
 display: flex;
+@include tablets{
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
 }
 .reviews__img {
-padding-right: 40px;
+padding-right: rem(40px);
+height: rem(264px);
+@include tablets{
+    width: rem(130px);
+    height: rem(130px);
+    padding: 0;
+}
 }
 .reviews__content {
-padding-top: 28px;
+padding-top: rem(28px);
 }
 
 .reviews__content-title {
     color: $header;
-    font-size: 27px;
+    font-size: rem(27px);
     font-weight: 700;
-    line-height: 32px;
-    margin-bottom: 14px;
+    line-height: rem(32px);
+    margin-bottom: rem(14px);
     }
     .reviews__content-about {
     color: $subtitle;
-    font-size: 18px;
+    font-size: rem(18px);
     font-weight: 400;
-    line-height: 22px;
-    margin-bottom: 25px;
+    line-height: rem(22px);
+    margin-bottom: rem(25px);
+    @include phones{
+        margin-bottom: rem(12px);
+    }
     }
     .reviews__content-writer {
     color: $header;
-    font-size: 18px;
+    font-size: rem(18px);
     font-weight: 500;
-    line-height: 24px;
+    line-height: rem(24px);
     }
     
 
     
 .reviews__photo {
-    margin-top: 15px;
+    margin-top: rem(15px);
+    @include tablets{
+        margin-top: rem(78px);
+    }
+    @include phones {
+        margin-top: rem(60px);
+    }
 }
 .reviews__photo-list {
     display: flex;
@@ -49,8 +80,8 @@ padding-top: 28px;
     
 }
 .reviews__photo-item {
-    margin-right: 6px;
-    border: 6px solid transparent;
+    margin-right: rem(6px);
+    border: rem(6px) solid transparent;
     border-radius: 50%;
         &--active{
             border-color: $yel;
@@ -63,12 +94,19 @@ padding-top: 28px;
 
 .reviews__photo-link {
     display: block;
-    height: 74px;
+    height: rem(74px);
+    @include phones{
+        height: rem(64px);
+    }
 }
 
 .reviews__photo-img {
-    width: 74px;
-    height: 74px;
+    width: rem(74px);
+    height: rem(74px);
+    @include phones{
+        width: rem(64px);
+        height: rem(64px);
+    }
 
 }
 

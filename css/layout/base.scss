@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+html{
+    font-size: $BaseFS;
+}
+
 body,html {
     height: 100%;
 }
@@ -47,11 +51,12 @@ address {
     background: url(../img/bg1.png) no-repeat;
     background-size: cover;
     height: 100vh;
-    min-height: 650px;
+    min-height: rem(650px);
 }
 
 .container {
-    width: 940px;
+    width: 95%;
+    max-width: 940px;
     margin: 0 auto;
 }
 

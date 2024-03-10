@@ -1,7 +1,9 @@
 
 .additionally {
-    margin: 0 0 82px;
-
+    margin: 0 0 rem(82px);
+    @include tablets{
+        display: none;
+    }
 }
 .additionally__list {
     display: flex;
@@ -10,21 +12,30 @@
 .additionally__item {
     display: flex;
     align-items: center;
-    margin-right: 82px;
-    max-width: 90px;
+    margin-right: rem(82px);
+    max-width: rem(90px);
     &:last-child{
         margin-right: 0;
     }
 }
+
+.additionally__img-box{
+    width: 35px;
+    height: 35px;
+    margin-right:rem(14px);
+}
+
 .additionally__img {
     display: block;
-    margin-right:14px;
+    width: rem(35px);
+    height: rem(35px);
+    
     }
 
 .additionally__title {
     color: $white;
-    font-size: 16px;
+    font-size: rem(16px);
     font-weight: 700;
-    line-height: 18px;
+    line-height: rem(18px);
 }
 

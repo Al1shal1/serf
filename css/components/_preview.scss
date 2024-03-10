@@ -1,19 +1,42 @@
 .preview {
-    max-width: 495px;
-
+    max-width: rem(495px);
+    @include tablets{
+        min-width: 100%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center
+    }
 }
 .preview__title {
     color: $white;
-font-size: 48px;
+font-size: rem(48px);
 font-weight: 700;
-line-height: 58px;
+line-height: rem(58px);
 text-transform: uppercase;
-margin-bottom: 17px;
+margin-bottom: rem(17px);
+@include tablets {
+    margin-bottom: rem(9px);
+}
+@include phones {
+font-size: rem(40px);
+line-height: rem(36px);
+}
 }
 .preview__subtitle {
     color: $white;
-font-size: 21px;
+font-size: rem(21px);
 font-weight: 400;
-line-height: 25px;
-margin-bottom: 60px;
+line-height: rem(25px);
+margin-bottom: rem(60px);
+@include tablets {
+    margin-bottom: rem(44px);
+}
+@include phones {
+font-size: rem(18px);
+line-height: rem(20px);
+margin-bottom: rem(43px);
+}
 }

@@ -2,10 +2,13 @@
     position: fixed;
     top: 20%;
     right: 3%;
+    @include tablets{
+        display: none;
+    }
 }
 
 .fixed-menu__item {
-    margin-bottom: 7px;
+    margin-bottom: rem(7px);
     &:last-child{
         margin-bottom: 0;
     }
@@ -18,17 +21,17 @@
 }
 
 .fixed-menu__link {
-    width: 19px;
-    height: 19px;
+    width: rem(19px);
+    height: rem(19px);
     border-radius: 50%;
-    border: 1px solid transparent;
+    border: rem(1px) solid transparent;
     display: block;
     position: relative;
     &::before{
         content: "";
         display: block;
-        width: 9px;
-        height: 9px;
+        width: rem(9px);
+        height: rem(9px);
         border-radius: 50%;
         background: #fff;
         position: absolute;
