@@ -1,15 +1,20 @@
 .hamburger{
+    position: fixed;
+    top: 0;
+    right: 0;
     width: rem(26px);
-    height: rem(20px);
+    height: rem(24px);
     flex-direction: column;
     justify-content: space-between;
-    margin-right: rem(18px);
     display: none;
     @include tablets{
         display: inline-flex;
+        top: rem(34px);
+        right: rem(35px);
     }
-    @include phones{
-        margin-right: 0;
+    @include phones {
+        top: rem(32px);
+        right: rem(9px);
     }
 }
 
