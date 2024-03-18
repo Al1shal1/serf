@@ -1,0 +1,247 @@
+.slider {
+
+    background: rgb(248, 250, 249);
+}
+.section {
+}
+.slider .container {
+    position: relative;
+}
+.slider__switches {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    min-width: 60%;
+    top: 47.5%;
+    left: 0;
+    width: 100%;
+    @include tablets{
+        width: 62%;
+    top: 34.5%;
+    left: 20%;
+    }
+    @include phones {
+    width: 96%;
+    top: 32%;
+    left: 2%;
+    }
+
+}
+.slider__switch {
+    display: flex;
+}
+.slider__switch--right {
+transform: rotate(180deg);
+
+}
+
+
+
+.slider__list {
+    display: flex;
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.slider__item {
+    display: flex;
+    flex: 1;
+}
+.slider__img {
+    width: rem(420px);
+    height: rem(540px);
+    @include tablets{
+        width: rem(318px);
+        height: rem(417px);
+    }
+    @include phones {
+        width: rem(252px);
+        height: rem(331px);
+    }
+}
+.slider__content {
+    display: flex;
+    flex-direction: column;
+    @include tablets {
+        align-items: center;
+    }
+    @include phones{
+        margin-top: rem(36px);
+    }
+}
+
+
+.option__list {
+    opacity: 0;
+    transition: 0.3s;
+    border-radius: rem(4px);
+        box-shadow: rem(4px) rem(4px) rem(40px) rem(0px) rgba(0, 0, 0, 0.06);
+        backdrop-filter: blur(40px);
+        background: rgba(255, 255, 255, 0.8);
+        width: rem(273px);
+        height: rem(321px);
+    padding: rem(24px) rem(25px) rem(27px) rem(26px);
+    position: absolute;
+    top: rem(13px);
+    left: 5000%;
+    }
+
+.slider__options {
+    display: block;
+    width: rem(95px);
+    height: rem(91px);
+    margin-bottom: rem(65px);
+    padding-top: rem(13px);
+    position: relative;
+    &:hover .option__list{
+        opacity: 1;
+        left: 100%;
+    transition: 0.3s;
+    }
+    @include tablets {
+        display: none;
+    }
+}
+
+.btn__slider {
+    display: flex;
+    height: rem(91px);
+}
+.option__img {
+    width: rem(91px);
+    height: rem(91px); 
+}
+
+
+
+.option__item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: rem(28px);
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+.option__container{
+    display: flex;
+}
+
+.option__icon {
+    width: rem(32px);
+    height: rem(32px);
+    margin-right: rem(12px);
+}
+.option__text {
+color: $black;
+font-size: rem(16px);
+font-weight: 500;
+line-height: rem(24px);
+display: flex;
+align-items: center;
+}
+
+.option__description-text- {
+color: $black;
+font-size: rem(16px);
+font-weight: 400;
+line-height: rem(24px);
+display: flex;
+align-items: center;
+}
+
+
+.slider__title {
+color:$black;
+font-size: rem(36px);
+font-weight: 700;
+line-height: rem(43px);
+text-transform: uppercase;
+margin-bottom: rem(24px);
+@include tablets {
+font-size: rem(30px);
+line-height: rem(36px);
+margin-bottom: rem(14px);
+}
+}
+.slider__about {
+color: $subtitle;
+font-size: rem(18px);
+font-weight: 400;
+line-height: rem(22px);
+width: rem(368px);
+margin-bottom: rem(24px);
+@include tablets{
+min-width: rem(528px);
+text-align: center;
+}
+@include phones {
+max-width: rem(380px);
+margin-bottom: rem(22px);
+}
+}
+.slider__feature {
+    margin-bottom: rem(24px);
+    @include phones{
+        margin-bottom: rem(22px);
+    }
+}
+.feature__list {
+    display: flex;
+    white-space: nowrap;
+    @include tablets{
+        width: rem(252px);
+    }
+    
+}
+.feature__item {
+    display: flex;
+    flex-direction: column;
+    margin-right: rem(55px);
+    &:last-child{
+        margin-right: 0;
+    }
+}
+.feature__name {
+color: $subtitle;
+font-size: rem(18px);
+font-weight: 400;
+line-height: rem(22px);
+}
+.feature__description {
+color: $black;
+font-size: rem(18px);
+font-weight: 700;
+line-height: rem(22px);
+}
+.slider__price {
+display: flex;
+@include tablets{
+    width: rem(351px);
+}
+}
+.slider__cost {
+    color: $black;
+    font-size: rem(60px);
+    font-weight: 300;
+    line-height: rem(60px);
+    text-transform: uppercase;
+    display: flex;
+    margin-right: rem(12px);
+}
+
+.slider__currency {
+    @extend.slider__cost
+}
+.slider__btn-box{
+    display: flex;
+    margin-left: rem(29px);
+    @include phones {
+        margin-left:  rem(19px);
+    }
+}
+.button__slider{
+font-size: rem(16px);
+
+}
