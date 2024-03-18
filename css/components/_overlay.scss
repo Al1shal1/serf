@@ -1,0 +1,47 @@
+.overlay {
+    background: rgb(51, 53, 55);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    opacity: 0;
+    z-index: 10;
+    &--active{
+        opacity: 1; 
+        left: 0 ;// 0000000000//
+    }
+}
+
+.overlay__menu {
+}
+.overlay .menu {
+    display: block;
+    flex-direction: column;
+}
+.overlay .menu__list {
+    flex-direction: column;
+    padding: 0;
+}
+.overlay .menu__item {
+    margin-right: 0;
+    transition: 0.15s;
+    &:hover{
+        border-bottom: 1px solid  $white;
+    }
+}
+.overlay .menu__title {
+    color: $white;
+font-size: rem(36px);
+font-weight: 400;
+line-height: rem(72px);
+text-align: center;
+}
+
+.body--active{
+    overflow: hidden;
+}
