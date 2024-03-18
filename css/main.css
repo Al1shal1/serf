@@ -947,8 +947,11 @@ address {
 }
 
 .slider {
-  position: relative;
   background: rgb(248, 250, 249);
+}
+
+.slider .container {
+  position: relative;
 }
 
 .slider__switches {
@@ -961,7 +964,8 @@ address {
   position: absolute;
   min-width: 60%;
   top: 47.5%;
-  left: 16%;
+  left: 0;
+  width: 100%;
 }
 @media screen and (max-width: 768px) {
   .slider__switches {
