@@ -1073,7 +1073,7 @@ address {
   padding: 1.3333333333rem 1.3888888889rem 1.5rem 1.4444444444rem;
   position: absolute;
   top: 0.7222222222rem;
-  left: 1000%;
+  left: 5000%;
 }
 
 .slider__options {
@@ -1191,6 +1191,7 @@ address {
 }
 @media screen and (max-width: 500px) {
   .slider__about {
+    min-width: 0;
     max-width: 21.1111111111rem;
     margin-bottom: 1.2222222222rem;
   }
@@ -1925,6 +1926,9 @@ address {
 }
 .overlay .menu__item:hover {
   border-bottom: 1px solid #fff;
+}
+.overlay .menu__item:last-child {
+  margin-bottom: 0;
 }
 
 .overlay .menu__title {

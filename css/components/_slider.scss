@@ -177,6 +177,7 @@ min-width: rem(528px);
 text-align: center;
 }
 @include phones {
+    min-width: 0;
 max-width: rem(380px);
 margin-bottom: rem(22px);
 }
