@@ -29,25 +29,39 @@
 }
 .slider__switch {
     display: flex;
+    cursor: pointer;
 }
 .slider__switch--right {
 transform: rotate(180deg);
-
 }
 
 
+.bx-wrapper{
+    border: none;
+    background: transparent;
+    box-shadow: none;
+}
 
 .slider__list {
     display: flex;
     @include tablets {
-        flex-direction: column;
         align-items: center;
     }
+
 }
 
 .slider__item {
     display: flex;
-    flex: 1;
+width: 100%;
+@include tablets{
+    flex-direction: column;
+}
+}
+.slider__col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 .slider__img {
     width: rem(420px);

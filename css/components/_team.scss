@@ -1,0 +1,155 @@
+.team {
+}
+
+.team__title {
+    margin-bottom: rem(53px);
+    @include tablets{
+        margin-bottom: rem(33px);
+    }
+    @include phones{
+        margin-bottom: rem(36px);
+    }
+}
+
+.team__list {
+display: flex;
+&--desk{
+    @include tablets{
+        display: none;
+    }
+}
+&--mobile{
+    display: none;
+    flex-direction: column;
+    @include tablets{
+        display: flex;
+        align-items: center;
+    }
+}
+}
+
+.team__item {
+    display: flex;
+    flex-direction: column;
+    margin-right: rem(20px);
+    &:last-child{
+        margin-right: 0;
+    }
+    @include tablets{
+        margin-right: 0;
+        margin-bottom: rem(16px);
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    @include phones{
+        margin-bottom: rem(6px);
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
+
+.team-img-box {
+    width: rem(220px);
+    height: rem(290px);
+    margin-bottom: rem(21px);
+    @include tablets{
+        margin: rem(16px) 0 rem(21px) 0;
+    }
+    @include phones{
+        margin: rem(13px) 0 rem(17px) 0;
+    }
+}
+
+.team__img {
+    
+}
+
+.team__about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.team__name {
+    color: $header;
+font-size: rem(21px);
+font-weight: 700;
+line-height: rem(25px);
+position: relative;
+display: flex;
+align-items: center;
+margin-bottom: rem(8px);
+@include tablets{
+    margin-bottom: 0;
+}
+}
+
+.team__name-icon{
+    width: rem(9px);
+    height: rem(9px);
+    margin-left: rem(4px);
+    transition: 0.3s;
+}
+
+.team__content {
+overflow: hidden;
+height: 0;
+transition: 0.3s;
+&--active{
+    overflow: visible;
+    min-height: rem(100px);
+    & .team__name-icon{
+        transform: rotate(180deg);
+    }
+}
+&-wrap{
+    display: flex;
+    @include tablets{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+}
+
+.team__content-list {
+display: flex;
+flex-direction: column;
+align-items: center;
+@include tablets{
+    padding-bottom: rem(32px);
+}
+}
+
+.team__content-item{
+    display: flex;
+text-align: center;
+margin-bottom: rem(4px);
+&:last-child{
+    margin-bottom: 0;
+}
+@include tablets{
+    margin-bottom: 0;
+}
+}
+
+.team__activity {
+color: $black;
+font-size: rem(18px);
+font-weight: 400;
+line-height: rem(22px);
+@include tablets{
+    font-weight: 700;
+}
+}
+
+.team__description {
+color: $subtitle;
+font-size: rem(18px);
+font-weight: 300;
+line-height: rem(22px);
+}
+
+
