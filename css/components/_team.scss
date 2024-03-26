@@ -32,6 +32,14 @@ display: flex;
     display: flex;
     flex-direction: column;
     margin-right: rem(20px);
+    flex: 1;
+    &--active{
+        overflow: visible;
+        min-height: rem(100px);
+        & .team__name-icon{
+            transform: rotate(180deg);
+        }
+    }
     &:last-child{
         margin-right: 0;
     }
@@ -48,12 +56,15 @@ display: flex;
             margin-bottom: 0;
         }
     }
+
 }
 
 .team-img-box {
     width: rem(220px);
     height: rem(290px);
     margin-bottom: rem(21px);
+    max-width: rem(220px);
+    max-height: rem(290px);
     @include tablets{
         margin: rem(16px) 0 rem(21px) 0;
     }
@@ -98,13 +109,7 @@ margin-bottom: rem(8px);
 overflow: hidden;
 height: 0;
 transition: 0.3s;
-&--active{
-    overflow: visible;
-    min-height: rem(100px);
-    & .team__name-icon{
-        transform: rotate(180deg);
-    }
-}
+
 &-wrap{
     display: flex;
     @include tablets{

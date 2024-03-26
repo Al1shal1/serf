@@ -44,7 +44,7 @@ $('.reviews__photo-link').click(e =>{
         const textBlock = contentBlock.find(".team__content-wrap");
         const reqHeight = textBlock.height();
 
-        container.addClass("team__content--active");
+        container.addClass("team__item--active");
         contentBlock.height(reqHeight);
     }
 
@@ -52,7 +52,7 @@ $('.reviews__photo-link').click(e =>{
         const items = container.find('.team__content');
         const itemContainer = container.find(".team__item");
 
-        itemContainer.removeClass("team__content--active");
+        itemContainer.removeClass("team__item--active");
         items.height(0);
     }
 
@@ -62,7 +62,7 @@ $('.reviews__photo-link').click(e =>{
         const container = $this.closest('.team__list');
         const elemContainer = $this.closest(".team__item")
 
-        if(elemContainer.hasClass("team__content--active")) {
+        if(elemContainer.hasClass("team__item--active")) {
             closeEveryItem(container);
             img.toggleClass("team__name-icon--right")
         }else{
@@ -132,7 +132,8 @@ $('.form').submit(e => {
                     });
 
                     request.done(data =>{
-                        content.text(data.message)
+                        content.text(data.message);
+                        form.value="";
                         //console.log(data);
                         
                     })
