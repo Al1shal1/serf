@@ -137,8 +137,8 @@ $('.form').submit(e => {
                         //console.log(data);
                         
                     })
-                    request.fail(data => {
-                        const message = data.responseJSON.message;
+                    request.fail(() => {
+                        const message = "Ошибка сервера";
                         content.text(message);
                         modal.addClass("error-modal");
                     })
